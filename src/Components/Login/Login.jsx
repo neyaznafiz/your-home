@@ -1,14 +1,18 @@
 import React from 'react';
+import { FcGoogle } from 'react-icons/fc';
+import UseFirebase from '../UseFirebase/UseFirebase';
 
 
 
-const Login = ({googleSIgnin}) => {
+const Login = () => {
 
-    
+    const {googleSIgnin}=UseFirebase()
 
     return (
         <div>
-            <button onClick={googleSIgnin} className='mt-7 border px-5 py-1.5 rounded-md bg-black text-white hover:bg-white hover:text-black'>Login with google</button>
+            
+
+            <button onClick={googleSIgnin} className='flex mx-auto border rounded-md py-2 px-4 text-xl text-gray800 font-semibold hover:bg-gray-300 hover:text-gray-700'><FcGoogle className='mt-1 mr-2'></FcGoogle> Continue with google</button>
         </div>
     );
 };
