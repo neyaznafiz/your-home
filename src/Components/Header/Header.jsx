@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import auth from '../../Firebase/firebase.init';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import UseFirebase from '../UseFirebase/UseFirebase';
 
 const Header = () => {
 
-    // const [user] = UseFirebase(auth)
-    // console.log(user);
+    const [user] = useAuthState(auth)
+    const {handleSingOut} = UseFirebase()
 
     return (
         <nav className='bg-gray-400 py-5 px-20'>
@@ -21,12 +22,12 @@ const Header = () => {
                     <Link className='ml-6' to='/rooms'>Rooms</Link>
                     <Link className='ml-6' to='/checkout'>Checkout</Link>
 
-                    {/* {
+                    {
                         user ?
-                            <Link to="/">Logout</Link>
+                            <Link to="/" className='ml-6' onClick={handleSingOut}>Logout</Link>
                             :
-                        } */}
                         <Link className='ml-6' to='/login'>Login</Link>
+                        }
                 </div>
             </div>
 

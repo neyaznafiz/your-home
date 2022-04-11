@@ -7,7 +7,7 @@ import UseFirebase from '../UseFirebase/UseFirebase';
 
 const Login = () => {
 
-    const { googleSIgnin } = UseFirebase()
+    const { googleSIgnin, } = UseFirebase()
 
     return (
         <div>
