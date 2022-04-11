@@ -4,11 +4,12 @@ import CheckOut from './Components/CheckOut/CheckOut';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
+import Regester from './Components/Regester/Regester';
 import Rooms from './Components/Rooms/Rooms';
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <Header></Header>
 
       <Routes>
@@ -16,6 +17,7 @@ function App() {
         <Route path='/rooms' element={<Rooms></Rooms>}></Route>
         <Route path='/checkout' element={<CheckOut></CheckOut>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/regester' element={<Regester></Regester>}></Route>
       
       </Routes>
     </div>
