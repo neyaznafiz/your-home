@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Rooms = () => {
+const Rooms = ({room}) => {
+    console.log(room);
     return (
         <div>
             <h2>This is Rooms</h2>

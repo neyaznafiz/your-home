@@ -1,9 +1,14 @@
 import React from 'react';
 
-const Login = () => {
+
+
+const Login = ({googleSIgnin}) => {
+
+    
+
     return (
         <div>
-            <h2>This is Login</h2>
+            <button onClick={googleSIgnin} className='mt-7 border px-5 py-1.5 rounded-md bg-black text-white hover:bg-white hover:text-black'>Login with google</button>
         </div>
     );
 };
