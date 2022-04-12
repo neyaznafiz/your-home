@@ -1,10 +1,11 @@
 import React from 'react';
-import { GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth'
+import { GoogleAuthProvider, signInWithPopup, signOut, TwitterAuthProvider } from 'firebase/auth'
 import auth from '../../Firebase/firebase.init'
 import { useState } from 'react';
 
 
 const googleProvider = new GoogleAuthProvider()
+const twitterProvider = new TwitterAuthProvider()
 
 
 const UseFirebase = () => {
@@ -17,6 +18,20 @@ const UseFirebase = () => {
             .then(result => {
                 const user = result.user
                 setUser(user)
+            })
+            .catch(error => {
+                alert(error)
+            })
+    }
+
+    const twitterSignin = () => {
+        signInWithPopup(auth, twitterProvider)
+            .then(result => {
+                const user = result.user
+                setUser(user)
+            })
+            .catch(error => {
+                alert(error)
             })
     }
 

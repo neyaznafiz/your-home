@@ -1,30 +1,30 @@
-import React from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
-import Rooms from '../../Rooms/Rooms';
+// import React from 'react';
+// import { useEffect } from 'react';
+// import { useState } from 'react';
+// import Rooms from '../../Rooms/Rooms';
 
-const DataFetch = () => {
+// const DataFetch = () => {
 
-    const [rooms, setRooms] = useState([])
+//     const [data, setData] = useState([])
 
-    useEffect(() => {
+//     useEffect(() => {
 
-        fetch("HotelData.json")
-            .then(res => res.json())
-            .then(data => setRooms(data))
+//         fetch("hotelData.json")
+//             .then(res => res.json())
+//             .then(data => setData(data))
 
-    }, [])
+//     }, [])
 
-    return (
-        <div>
-            {
-                rooms.map(room => <Rooms
-                    key={room.id}
-                    room={room}
-                ></Rooms>)
-            }
-        </div>
-    );
-};
+//     return (
+//         <div>
+//             {
+//                 data.map(room => <Rooms
+//                     key={room.id}
+//                     room={room}
+//                 ></Rooms>)
+//             }
+//         </div>
+//     );
+// };
 
-export default DataFetch;
+// export default DataFetch;
