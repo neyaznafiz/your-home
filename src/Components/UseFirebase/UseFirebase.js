@@ -41,7 +41,7 @@ const UseFirebase = () => {
 
     }
 
-    return { googleSIgnin, handleSingOut }
+    return { googleSIgnin, twitterSignin, handleSingOut }
 };
 
 export default UseFirebase;

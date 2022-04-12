@@ -8,7 +8,7 @@ import UseFirebase from '../UseFirebase/UseFirebase';
 
 const Login = () => {
 
-    const { googleSIgnin, } = UseFirebase()
+    const { googleSIgnin, twitterSignin } = UseFirebase()
 
     return (
         <div>
@@ -46,7 +46,7 @@ const Login = () => {
                     <button onClick={googleSIgnin} className='flex mx-auto border rounded-md my-5 py-2 px-4 text-xl text-gray800 font-semibold hover:bg-gray-300 hover:text-gray-700'><FcGoogle className='mt-1 mr-2'></FcGoogle> Continue with google</button>
 
 
-                    <button onClick={googleSIgnin} className='flex mx-auto border rounded-md my-5 py-2 px-4 text-xl text-gray800 font-semibold hover:bg-gray-300 hover:text-gray-700'> <SiTwitter className='mt-1 mr-2'></SiTwitter> Continue with Twitter</button>
+                    <button onClick={twitterSignin} className='flex mx-auto border rounded-md my-5 py-2 px-4 text-xl text-gray800 font-semibold hover:bg-gray-300 hover:text-gray-700'> <SiTwitter className='mt-1 mr-2'></SiTwitter> Continue with Twitter</button>
                 </div>
             </div>
         </div>
