@@ -2,6 +2,7 @@ import React from 'react';
 import { GoogleAuthProvider, signInWithPopup, signOut, TwitterAuthProvider } from 'firebase/auth'
 import auth from '../../Firebase/firebase.init'
 import { useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 
 const googleProvider = new GoogleAuthProvider()
@@ -10,7 +11,14 @@ const twitterProvider = new TwitterAuthProvider()
 
 const UseFirebase = () => {
 
-    const [user, setUser] = useState({})
+   
+
+    const [user, setUser] = useState(auth)
+
+
+    const handleCreateUser = event => {
+        event.preventDefault()
+    }
 
     const googleSIgnin = () => {
 

@@ -11,14 +11,14 @@ const Header = () => {
     const {handleSingOut} = UseFirebase()
 
     return (
-        <nav className='bg-gray-400 py-5 px-20'>
+        <nav className='bg-violet-100 py-5 px-20'>
 
             <div className='lg:flex md:flex lg:justify-between md:justify-between '>
                 <div>
-                    <h2 className='border-2 border-gray-500  py-1 px-3 rounded'>YOUR HOME</h2>
+                    <h2 className='border-l-4 border-black  py-1 px-3 text-xl font-semibold font-serif'>YOUR HOME</h2>
                 </div>
 
-                <div className='flex'>
+                <div className='flex font-semibold font-serif'>
                     <CoustomLink className='ml-6' to='/'>Home</CoustomLink>
                     <CoustomLink className='ml-6' to='/rooms'>Rooms</CoustomLink>
                     <CoustomLink className='ml-6' to='/checkout'>Checkout</CoustomLink>
