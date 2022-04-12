@@ -19,5 +19,47 @@
      "price": 9500,
      "img": "https://www.actonshotelkinsale.com/upload/slide_images/family-room.jpg",
      "info": "The kitchen is equipped with an oven, a microwave and a fridge and there is a private bathroom."
-    }
+    },
+    {
+     "id":1033,
+     "name": "Family Room",
+     "price": 9500,
+     "img": "https://www.actonshotelkinsale.com/upload/slide_images/family-room.jpg",
+     "info": "The kitchen is equipped with an oven, a microwave and a fridge and there is a private bathroom."
+    },
+    {
+        "id":1011,
+        "name": "SIngle Room",
+        "price": 3500,
+        "img": "https://t-cf.bstatic.com/xdata/images/hotel/max300/233068046.webp?k=34ed1e299a89f4f8eb08d8bc51e7195bfaaccc214bf2b20343a5b6e713431a30&o=",
+        "info": "Sterling Shores is a holiday home is set in Destin is 1.3 km from Big Kahunas. The holiday home is 1.4 km from Beaches of South Walton."
+       },
+    {
+        "id":1022,
+        "name": "Double Room",
+        "price": 5500,
+        "img": "https://t-cf.bstatic.com/xdata/images/hotel/max300/52230830.webp?k=88e839c77a40d5d1c73428b5935b5772ef55e6c05bae4d3c8429095d74e67903&o=",
+        "info": "Free WiFi, a flat-screen cable TV, and refrigerator are standard in every room at Surfside Beach Resort. Extras include a coffee machine, microwave, and bathroom with granite vanity counter-tops."
+    },
+    {
+        "id":10111,
+        "name": "SIngle Room",
+        "price": 3500,
+        "img": "https://t-cf.bstatic.com/xdata/images/hotel/max300/233068046.webp?k=34ed1e299a89f4f8eb08d8bc51e7195bfaaccc214bf2b20343a5b6e713431a30&o=",
+        "info": "Sterling Shores is a holiday home is set in Destin is 1.3 km from Big Kahunas. The holiday home is 1.4 km from Beaches of South Walton."
+       },
+       {
+        "id":10222,
+        "name": "Double Room",
+        "price": 5500,
+        "img": "https://t-cf.bstatic.com/xdata/images/hotel/max300/52230830.webp?k=88e839c77a40d5d1c73428b5935b5772ef55e6c05bae4d3c8429095d74e67903&o=",
+        "info": "Free WiFi, a flat-screen cable TV, and refrigerator are standard in every room at Surfside Beach Resort. Extras include a coffee machine, microwave, and bathroom with granite vanity counter-tops."
+       },
+       {
+        "id":10333,
+        "name": "Family Room",
+        "price": 9500,
+        "img": "https://www.actonshotelkinsale.com/upload/slide_images/family-room.jpg",
+        "info": "The kitchen is equipped with an oven, a microwave and a fridge and there is a private bathroom."
+       }
 ]
