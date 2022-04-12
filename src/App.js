@@ -6,6 +6,7 @@ import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import Regester from './Components/Regester/Regester';
 import Rooms from './Components/Rooms/Rooms';
+import RequireAuth from './Components/RuquireAuth/RequireAuth';
 
 function App() {
   return (
@@ -15,10 +16,16 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/rooms' element={<Rooms></Rooms>}></Route>
-        <Route path='/checkout' element={<CheckOut></CheckOut>}></Route>
+
+        <Route path='/checkout' element={
+          <RequireAuth>
+            <CheckOut></CheckOut>
+          </RequireAuth>
+        }></Route>
+
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/regester' element={<Regester></Regester>}></Route>
-      
+
       </Routes>
     </div>
   );

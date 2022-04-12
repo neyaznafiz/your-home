@@ -21,17 +21,12 @@ const Login = () => {
 
                     <div className='grid'>
                         <label htmlFor="email" className='font-semibold '>Email</label>
-                        <input type="email" name="email" id="" className='rounded px-1 bg-orange-200 h-8' />
+                        <input type="email" name="email" id="" className='rounded px-1 bg-orange-200 h-8' required />
                     </div>
 
                     <div className='grid mt-5'>
                         <label htmlFor="password" className='font-semibold'>Password</label>
-                        <input type="password" name="password" id="" className='rounded px-1 bg-orange-200 h-8' />
-                    </div>
-
-                    <div className='grid mt-5'>
-                        <label htmlFor="confirm-password" className='font-semibold'>Confirm Password</label>
-                        <input type="password" name="confirm-password" id="" className='rounded px-1 bg-orange-200 h-8' />
+                        <input type="password" name="password" id="" className='rounded px-1 bg-orange-200 h-8' required />
                     </div>
 
                     <input className='border rounded-md my-5 py-1 px-4 text-xl text-gray800 font-semibold hover:bg-gray-300 hover:text-gray-700' type="submit" value="Login" />
